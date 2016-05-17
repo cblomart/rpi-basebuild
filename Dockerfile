@@ -6,7 +6,7 @@ RUN apt-get update &&  apt-get install -y \
 	python-dev \
         python-pip \
         wget \
-        dockert.io \
+        docker.io \
     && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 RUN pip install dockerize \
     && rm -rf /tmp/* /var/tmp/*
