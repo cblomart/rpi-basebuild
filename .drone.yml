@@ -1,0 +1,6 @@
+build:
+  image: cblomart/rpi-buildroot
+  volumes:
+    - /var/run/docker.socket:/var/run/docker.socket 
+  commands:
+    - docker build -t cblomart/rpi-basebuild .
