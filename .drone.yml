@@ -1,5 +1,5 @@
 build:
-  image: cblomart/rpi-buildroot
+  image: cblomart/rpi-basebuild
   volumes:
     - /var/run/docker.sock:/var/run/docker.sock 
   commands:
