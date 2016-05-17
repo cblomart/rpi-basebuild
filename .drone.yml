@@ -4,3 +4,10 @@ build:
     - /var/run/docker.socket:/var/run/docker.socket 
   commands:
     - docker build -t cblomart/rpi-basebuild .
+publish:
+  docker:
+    username: cblomart
+    password: $$DOCKERHUB_PASS
+    email: cblomart@gmail.com
+    repo: cblomart/rpi-basebuild
+    tag: $$BRANCH
