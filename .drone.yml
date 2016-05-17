@@ -10,4 +10,7 @@ publish:
     password: $$DOCKERHUB_PASS
     email: cblomart@gmail.com
     repo: cblomart/rpi-basebuild
-    tag: $$BRANCH
+    insecure: true
+    tag: 
+       - $$BRANCH
+       - latest
