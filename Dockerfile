@@ -8,6 +8,8 @@ RUN apt-get update &&  apt-get install -y \
         wget \
         docker.io \
         rsync \
+        musl \
+        musl-tools \
     && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 RUN pip install dockerize \
     && rm -rf /tmp/* /var/tmp/*
