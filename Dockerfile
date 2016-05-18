@@ -10,6 +10,7 @@ RUN apt-get update &&  apt-get install -y \
         rsync \
         musl \
         musl-tools \
+        xutils-dev \
     && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 RUN pip install dockerize \
     && rm -rf /tmp/* /var/tmp/*
