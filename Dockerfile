@@ -7,6 +7,7 @@ RUN apt-get update &&  apt-get install -y \
         python-pip \
         wget \
         docker.io \
+        rsync \
     && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 RUN pip install dockerize \
     && rm -rf /tmp/* /var/tmp/*
