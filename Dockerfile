@@ -18,7 +18,7 @@ RUN pip install dockerize \
 RUN curl https://storage.googleapis.com/golang/go1.6.2.linux-armv6l.tar.gz | tar -C /usr/local -zx
 RUN mkdir /root/go
 
-RUN echo "export GOPATH=/root/go" >> /etc/profile
-RUN echo 'export PATH=$PATH:$GOPATH/bin' >> /etc/profile
+ENV GOPATH "/root/go"
+ENV PATH "/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/drone/bin:/root/go/bin"
 
 VOLUME  /var/run/docker.sock
