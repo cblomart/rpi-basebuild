@@ -19,6 +19,6 @@ RUN curl https://storage.googleapis.com/golang/go1.6.2.linux-armv6l.tar.gz | tar
 RUN mkdir /root/go
 
 RUN echo "export GOPATH=/root/go" >> /etc/profile
-RUM echo 'export PATH=$PATH:$GOPATH/bin' >> /etc/profile
+RUN echo 'export PATH=$PATH:$GOPATH/bin' >> /etc/profile
 
 VOLUME  /var/run/docker.sock
