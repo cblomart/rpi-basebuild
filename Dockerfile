@@ -13,6 +13,7 @@ RUN apt-get update &&  apt-get install -y \
         musl-tools \
         xutils-dev \
         git \
+        upx-ucl \
     && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 RUN pip install dockerize \
     && rm -rf /tmp/* /var/tmp/*
